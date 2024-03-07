@@ -5,6 +5,9 @@
 #define     __I     const volatile     /*!<Defines 'readonly' permissions     */
 #define     __IO    volatile           /*!<Defines 'read / write' permissions */
 
+#define     MSTPCRB             ((volatile uint32_t *)0x40047000u))
+#define     STOP_MODULE_USBFS   (1u << 11)
+#define     STOP_MODULE_USBHS   (1u << 12)
 /**
  * @brief R_USB_FS0_PIPE_TR [PIPE_TR] (Pipe Transaction Counter Registers)
  */
